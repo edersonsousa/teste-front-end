@@ -2,17 +2,26 @@
   "name": "teste-front-end",
   "version": "1.0.0",
   "description": "` Todos os interessados que fizerem pull request e enviarem o curriculo para felipe.alves@fbmobile.com.br com assunto NOME DA VAGA + NOME DA EMPRESA receberão um feedback. `",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/edersonsousa/teste-front-end.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "crud",
+    "nodejs",
+    "teste",
+    "mongo",
+    "javascript"
+  ],
+  "author": "Ed < @edersonsousa ",
+  "license": "?",
   "bugs": {
     "url": "https://github.com/edersonsousa/teste-front-end/issues"
   },
@@ -20,6 +29,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "express": "^4.17.1",
     "express-promise-router": "^4.0.1",
     "lint": "^0.7.0",
