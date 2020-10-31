@@ -20,7 +20,9 @@
   ],
   "author": "Ed < @edersonsousa >",
   "license": "ISC",
-  "bugs": {"url": "https://github.com/edersonsousa/teste-front-end/issues"},
+  "bugs": {
+    "url": "https://github.com/edersonsousa/teste-front-end/issues"
+  },
   "homepage": "https://github.com/edersonsousa/teste-front-end#readme",
   "devDependencies": {
     "husky": "^4.3.0",
