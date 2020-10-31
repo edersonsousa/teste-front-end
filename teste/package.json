@@ -2,13 +2,26 @@
   "name": "teste",
   "version": "1.0.0",
   "description": "Teste do Ed",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "lint": "eslint --ext .js, -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "api",
+    "crud",
+    "mongodb",
+    "teste",
+    "noSql",
+    "teste-backend"
+  ],
+  "author": "Ed < @edersonsousa >",
   "license": "ISC",
+  "bugs": {"url": "https://github.com/edersonsousa/teste-front-end/issues"},
+  "homepage": "https://github.com/edersonsousa/teste-front-end#readme",
   "devDependencies": {
     "husky": "^4.3.0",
     "nodemon": "^2.0.6"
@@ -16,6 +29,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "express": "^4.17.1",
     "express-promise-router": "^4.0.1",
     "mongoose": "^5.10.11"
